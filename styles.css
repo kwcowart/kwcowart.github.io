@@ -38,6 +38,8 @@ nav a {
     width: 20%;
     color: white;
     text-align: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -51,15 +53,30 @@ nav a {
     margin: auto;
 }
 
+.stretched-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    text-indent: -9999px;
+}
+
+.src-link {
+    position: relative;
+    z-index: 2;
+}
+
 .double-grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    font-size: x-large;
     margin-top: 5rem;
 }
 
 .grid-col {
     width: 100%;
+}
+
+.grid-col.info-col {
+    font-size: x-large;
 }
 
 .grid-col img {
