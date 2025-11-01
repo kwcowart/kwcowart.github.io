@@ -9,16 +9,48 @@
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Primary">
             <a href="./index.html">Home</a>
             <a href="./about.html">About Me</a>
-            <a href="./book.html">Favorite Book</a>
-            <a href="./movie.html">Favorite Movie</a>
-            <a href="./music.html">Favorite Songs</a>
+            <a href="./book.html">Favorite Books</a>
+            <a href="./movie.html">Favorite Movies</a>
+            <a href="./music.html">Favorite Albums</a>
         </nav>
     </header>
     <h1>Welcome to my website!</h1>
     <p>My name is Kyle Cowart. I am a senior at UW Madison. This website will provide some information about me!</p>
+    <p>Also check out my github <a href="https://github.com/kwcowart">here!</a></p>
+    <h2 style="text-align: center;margin-top: 5rem;">More Information</h2>
+    <div class="info-cards" style="display:flex;">
+        <div class="card" onclick="location.href='./about.html'" style="cursor:pointer;">
+            <h3>About Me</h3>
+            <p>Click here to see more information about me!</p>
+            <img src="images/myface.jpg" alt="Zoomed in headshot of Kyle's face">
+        </div>
+        <div class="card" onclick="location.href='./book.html'" style="cursor:pointer;">
+            <h3>Favorite Books</h3>
+            <p>Click here to read about my favorite books!</p>
+            <img src="images/stack-of-books.png" alt="Stack of books">
+            <a href="https://www.flaticon.com/free-icons/library" title="library icons"
+                style="font-size: small;">Library icons created by popo2021 - Flaticon</a>
+        </div>
+        <div class="card" onclick="location.href='./movie.html'" style="cursor:pointer;">
+            <h3>Favorite Movies</h3>
+            <p>Click here to see more about my favorite movies!</p>
+            <img src="images/clapperboard.png" alt="Clapperboard">
+            <a href="https://www.flaticon.com/free-icons/clapperboard" title="clapperboard icons"
+                style="font-size: small;">Clapperboard icons created by Freepik - Flaticon</a>
+            </p>
+        </div>
+        <div class="card" onclick="location.href='./music.html'" style="cursor:pointer;">
+            <h3>Favorite Music</h3>
+            <p>Click here to see more about my favorite music!</p>
+            <img src="images/music.png" alt="Music notes and stars">
+            <a href="https://www.flaticon.com/free-icons/song" title="song icons" style="font-size: small;">Song icons
+                created by Freepik - Flaticon</a>
+            </p>
+        </div>
+    </div>
     <footer>
         <p>Created by Kyle Cowart for LIS 351 - Fall 2025</p>
     </footer>
